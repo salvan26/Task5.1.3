@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none; 
+}
+body {
+    font-family: "TT Lakes", "Arial", sans-serif;
+    width: 320px;
+    height: 300px;
+    
+    
+}
+.header {
+    border-top: 1px solid  #D9FFF5;
+    width: auto;
+    height: 80px;
+    background-image: linear-gradient(#F8F8F8 100%, #ffffff 100%);
+}
+
+.header__title{
+    padding-left: 14px;
+    padding-top: 16px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    color:#7E7E82;
+}
+
+.main-content {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+}
+
+.swiper-container {
+    margin-top: 15px;
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
+    overflow-x:hidden;
+  }
+
+.swiper-wrapper{
+      display: flex;
+      flex-direction: row;
+      white-space: nowrap;
+      gap: 10px; 
+}
+
+.swiper-slide {
+    width: 240px;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-position:20px center;
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+}
+
+.swiper__btn-show {
+    display: block;
+    border: 1px solid #FF3E79;
+    border-radius: 50%;
+    background: url(img/dropdown.svg) no-repeat center;
+    height: 40px;
+    width: 40px;
+    margin-left:160px;
+    margin-top: 15px;
+
+}
+
+.slide-lenovo {
+    background-image: url(img/lenovo.png);
+}
+
+.slide-samsung {
+    background-image: url(img/samsung.png);
+}
+
+.slide-apple {
+    background-image: url(img/apple.png);
+}
+
+.slide-sonic {
+    background-image: url(img/sonic.png);
+}
+
+.slide-bosch {
+    background-image: url(img/bosch.png);
+}
+
+.slide-hp {
+    background-image: url(img/hp.png);
+}
+
+.slide-acer {
+    background-image: url(img/acer.png);
+}
+
+.slide-sony {
+    background-image: url(img/sony.png);
+    background-size: 40% 40%;
+}
+
+.swiper-pagination  {
+    position: relative;
+    margin-top: 10px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #DDDDDD;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+}
+
+.show-more {
+    display: none;
+}
+
+@media (min-width: 760px) {
+    body{
+       min-width: 768px;
+       width:100%;
+       height: auto;
+    }
+    .header{
+        width: 100%;
+    }
+
+    .header__title{
+        width: 100%;
+    }
+    .swiper-container{
+        width: 768px;
+        height: auto;
+    }
+
+    .swiper-wrapper {
+        height: 160px;
+        margin-top: 10px;
+        margin-left: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 224px);
+        grid-template-rows: repeat(2, 72px);
+        grid-auto-rows: 0;
+        overflow-y: hidden;
+        gap: 24px;
+        row-gap: 10px;
+    }
+
+    .swiper__btn-show {
+        margin-left: 165px;
+    }
+
+    .show-more {
+      display: block;  
+      text-decoration: none;
+      color: #1B1C21;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      font-weight: 550;
+      border: none;
+      background: transparent;
+      margin-left: 25px;
+      align-self: start;;
+    }
+
+    .show-more::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      background: url(img/link-icon.png) no-repeat 50% 50%;
+    }
+    .wrapper-show{
+        height: 90%;
+        margin-top: 10px;
+        margin-left: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 224px);
+        grid-auto-rows: 72px;
+        overflow-y: hidden;
+        gap: 24px;
+        row-gap: 10px;
+    }
+}
+@media (min-width: 1120px) {
+    body {
+        width: 1120px;
+        margin: 0 auto;
+    }
+
+    .swiper-container{
+        width: 1120px;
+        height: auto;
+    }
+
+    .swiper-wrapper {
+        height: 160px;
+        margin-top: 10px;
+        margin-left: 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 240px);
+        grid-template-rows: repeat(2, 72px);
+        grid-auto-rows: 0;
+        overflow-y: hidden;
+        gap: 24px;
+        row-gap: 10px;
+    }
+
+    .wrapper-show{
+        height: 90%;
+        margin-top: 10px;
+        margin-left: 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 240px);
+        grid-auto-rows: 72px;
+        overflow-y: hidden;
+        gap: 24px;
+        row-gap: 10px;
+    }
+}
