@@ -30,8 +30,8 @@ window.addEventListener('DOMContentLoaded', () => {
       direction: 'horizontal',
       loop: true,
       loopedSlides: 11,
-      slidesPerView: 1.5,
-      spaceBetween: 15,
+      slidesPerView: 'auto',
+      spaceBetween: 16,
       // If we need pagination
       pagination: {
         el: '.swiper-pagination',
